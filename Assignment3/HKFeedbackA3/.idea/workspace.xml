@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3fe80858-eb79-4b85-a4a8-83d56915636d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../HKFeedbackA2\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XwnWQ4IsIS2ngVjh4K4hafc3dF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fe80858-eb79-4b85-a4a8-83d56915636d" name="Default Changelist" comment="" />
+      <created>1581966055516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581966055516</updated>
+      <workItem from="1581966057039" duration="11923000" />
+      <workItem from="1582235429436" duration="16326000" />
+      <workItem from="1583970457413" duration="103000" />
+      <workItem from="1584021408347" duration="487000" />
+      <workItem from="1584021933488" duration="99000" />
+      <workItem from="1584022134140" duration="112000" />
+      <workItem from="1584634882091" duration="29722000" />
+      <workItem from="1584734915018" duration="692000" />
+      <workItem from="1584981682750" duration="5073000" />
+      <workItem from="1585106951993" duration="5606000" />
+      <workItem from="1586385551974" duration="6195000" />
+      <workItem from="1586486467434" duration="1220000" />
+      <workItem from="1587003074692" duration="60000" />
+      <workItem from="1587064032841" duration="1589000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2767" y="194" key="FileChooserDialogImpl" timestamp="1587003132572">
+      <screen x="1920" y="0" width="1536" height="832" />
+    </state>
+    <state x="-1073" y="220" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1585107047414" />
+    <state x="-861" y="275" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1581969642666" />
+    <state x="2767" y="194" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1587003132572" />
+    <state x="705" y="89" width="1215" height="883" key="SettingsEditor" timestamp="1586441407357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1052" y="163" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1581967024586" />
+    <state x="705" y="89" width="1215" height="883" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1586441407357" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1584651359469">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584651359469" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1584677477244">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/-1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1584677477244" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584732165406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584732165406" />
+  </component>
+</project>

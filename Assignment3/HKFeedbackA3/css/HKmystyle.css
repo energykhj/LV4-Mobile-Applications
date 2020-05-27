@@ -1,0 +1,16 @@
+/*
+PROG2430: Programming Mobile Web Applications I
+HKFeedbackA2
+Created by: Heuijin Ko
+*/
+
+label.error{
+    color: #F00;
+    font-weight: bold;
+}
+
+input.error,
+select.error,
+textarea.error {
+    border: 1px red solid;
+}

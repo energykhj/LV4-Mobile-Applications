@@ -1,0 +1,142 @@
+<!--
+Mobile web development 
+Take home midterm exam with JQuery Mobile
+Created by: Heuijin Ko
+Revision: Mar 27, 2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Take home midterm exam</title>
+        <!--jQuery-->
+        <script src="js/lib/jquery-2.1.4.js"></script>
+        <!--jQuery Mobile-->
+        <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+        <!--jQuery Mobile stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/lib/jquery.mobile-1.4.5.css">
+
+        <!--jQuery validator-->
+        <script src="js/lib/jquery.validate.js"></script>
+
+        <!--our scripts and stylesheets-->
+        <script src="js/HKfacade.js"></script>
+        <script src="js/HKglobla.js"></script>
+        <script src="js/HKutil.js"></script>
+        <link rel="stylesheet" href="css/HKmystyle.css">
+
+    </head>
+    <body>
+        <!--Task 2: About page-->
+        <div id="pageAbout" data-role="page">
+            <header data-role="header" data-theme="a" data-position="fixed">
+                <h1> About </h1>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#pageAbout" data-icon="star" class="ui-btn-active ui-state-persist">About</a></li>
+                        <li><a href="#pageRegister" data-icon="home">Register</a></li>
+                        <li><a href="#pagePurchase" data-icon="grid">Purchase</a></li>
+                    </ul>
+                </div>
+            </header>
+            <section data-role="content">
+                <h1>Name: Heuijin Ko</h1>
+                <h1>Section: Section 3</h1>
+            </section>
+            <footer data-role="footer" data-theme="a" data-position="fixed">
+                <h1>Midterm exam </h1>
+            </footer>
+        </div>
+
+        <!--Task 3: Register page-->
+        <div id="pageRegister" data-role="page">
+            <header data-role="header" data-theme="a" data-position="fixed">
+                <h1> Register </h1>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#pageAbout" data-icon="star">About</a></li>
+                        <li><a href="#pageRegister" data-icon="home" class="ui-btn-active ui-state-persist">Register</a></li>
+                        <li><a href="#pagePurchase" data-icon="grid">Purchase</a></li>
+                    </ul>
+                </div>
+
+            </header>
+            <section data-role="content">
+                <div id="mainDiv">
+                    <form id="HKRegisterForm" name="HKRegisterForm">
+                        <label for="HKtxtUserName">Username:</label>
+                        <input type="text" id="HKtxtUserName" name="HKtxtUserName" data-clear-btn="true">
+
+                        <label for="HKtxtFullName">Full Name:</label>
+                        <input type="text" id="HKtxtFullName" name="HKtxtFullName" data-clear-btn="true">
+
+                        <label for="HKtxtEmail">Email:</label>
+                        <input type="text" name="HKtxtEmail" id="HKtxtEmail" data-clear-btn="true">
+
+                        <label for="HKtxtPasswd">Password:</label>
+                        <input type="text" id="HKtxtPasswd" name="HKtxtPasswd" data-clear-btn="true">
+
+                        <label for="HKtxtVerifyPasswd">Verify Password:</label>
+                        <input type="text" id="HKtxtVerifyPasswd" name="HKtxtVerifyPasswd" data-clear-btn="true">
+
+                        <div>
+                            <button type="button" id="HKbtnRegister" name="HKbtnRegister" data-icon="check" data-theme="b">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer data-role="footer" data-theme="a" data-position="fixed">
+                <h1> Midterm exam </h1>
+            </footer>
+        </div>
+
+        <!--Task 4: Purchase page-->
+        <div id="pagePurchase" data-role="page">
+            <header data-role="header" data-theme="a" data-position="fixed">
+                <h1> Purchase </h1>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#pageAbout" data-icon="star">About</a></li>
+                        <li><a href="#pageRegister" data-icon="home">Register</a></li>
+                        <li><a href="#pagePurchase" data-icon="grid" class="ui-btn-active ui-state-persist">Purchase</a></li>
+                    </ul>
+                </div>
+
+            </header>
+            <section data-role="content">
+                <Form id="HKPurchaseForm" name="HKPurchaseForm">
+                    <label for="HKtxtOrderDate">Order Date:</label>
+                    <input type="date" name="HKtxtOrderDate" id="HKtxtOrderDate" placeholder="mm/dd/yyyy" data-clear-btn="true">
+
+                    <label for="HKtxtBookTitle">Book Title:</label>
+                    <input type="text" name="HKtxtBookTitle" id="HKtxtBookTitle" data-clear-btn="true" data-clear-btn="true">
+
+                    <label>Book type:</label>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <input type="radio" id="HKrdoHardCopy" name="HKrdoBookType" checked>
+                        <label for="HKrdoHardCopy">HardCopy</label>
+                        <input type="radio" id="HKrdoEBook" name="HKrdoBookType">
+                        <label for="HKrdoEBook">eBook</label>
+                    </fieldset>
+
+                    <label for="HKtxtUnitPrice">Unit Price:</label>
+                    <input type="number" name="HKtxtUnitPrice" id="HKtxtUnitPrice" data-clear-btn="true">
+                    <label for="HKtxtQuantity">Quantity:</label>
+                    <input type="number" name="HKtxtQuantity" id="HKtxtQuantity" data-clear-btn="true">
+                    <label for="HKtxtTotal">Total(disabled):</label>
+                    <input type="text" name="HKtxtTotal" id="HKtxtTotal" disabled/>
+
+                    <div>
+                        <button type="button" id="HKbtnCalculate" name="HKbtnCalculate" data-icon="check" data-theme="b">Calculate</button>
+                        <button type="button" id="HKbtnValidate" name="HKbtnValidate" data-icon="gear" data-theme="b">Validate</button>
+                    </div>
+                </Form>
+            </section>
+
+            <footer data-role="footer" data-theme="a" data-position="fixed">
+                <h1> Midterm exam </h1>
+            </footer>
+        </div>
+    </body>
+</html>

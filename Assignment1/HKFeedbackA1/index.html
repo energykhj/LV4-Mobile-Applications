@@ -1,0 +1,211 @@
+<!--
+PROG2430: Programming Mobile Web Applications I
+HKFeedbackA1
+Created by: Heuijin Ko
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0, user-scalable=no">
+    <title>HK Feedback A1</title>
+    <!--jQuery-->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <!--jQuery Mobile-->
+    <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+    <!--jQuery Mobile css-->
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery.mobile-1.4.5.css">
+    <!--our stuff-->
+</head>
+<body>
+    <!--Task 4: HomePage-->
+    <div id="HKHomePage" data-role="page">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h2>HK Feedback A1</h2>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#HKHomePage" data-icon="home" data-theme="a" c
+                           lass="ui-btn-active ui-state-persist">Home</a></li>
+                    <li><a href="#HKAddFeedbackPage" data-icon="plus"
+                           data-theme="a">Add</a></li>
+                    <li><a href="#HKViewFeedbackPage" data-icon="grid"
+                           data-theme="a">Reviews</a></li>
+                    <li><a href="#HKSettingsPage" data-icon="gear" data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <h2>Heuijin Ko's Feedback A1 App</h2>
+            <p>Welcome to the Heuijin Ko's Feedback A1 app. A prototype designed for mobile
+                programming class. This is the first iteration of the app to keep track of
+                different places you visited along with your reviews.</p>
+
+            <p align="center"><img src="img/HK-icon.png" height="220" alt="HK's Icon"/></p>
+            <p>Please feel free to contact me if you have any suggestions!</p>
+            <a href="#" data-role="button" id="btnHKCall" name="btnHKCall" data-icon="plus">Call: 226.899.5557</a>
+            <a href="mailto:hko7452@conestogac.on.ca" data-role="button" id="btnHKHomeEmail" name="btnHKHomeEmail"
+               data-icon="plus">hko7452@conestogac.on.ca</a>
+            <p> Website:</p>
+            <a href="http://www.conestogac.on.ca" data-role="button" id="btnHKWebsite" name="btnHKWebsite"
+               data-icon="plus">Conestoga College</a>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">        <!--color changed a, b-->
+            <h1>&copy; 2020 Heuijin Ko</h1>
+        </footer>
+    </div>
+
+    <!--Task 5: Add Feedback Page-->
+    <div id="HKAddFeedbackPage" data-role="page">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h2>Add a Feedback</h2>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#HKHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#HKAddFeedbackPage" data-icon="plus" data-theme="a"
+                           class="ui-btn-active ui-state-persist">Add</a></li>
+                    <li><a href="#HKViewFeedbackPage"
+                           data-icon="grid" data-theme="a">Reviews</a></li>
+                    <li><a href="#HKSettingsPage" data-icon="gear" data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <Form id="HKAddForm" name="HKAddForm">
+                <label for="txtHKBizName">Business Name:</label>
+                <input type="text" name="txtHKBizName" id="txtHKBizName"
+                       data-clear-btn="true" value=""/>
+                <label for="txtHKEmail">Reviewer Email:</label>
+                <input type="text" name="txtHKEmail" id="txtHKEmail"
+                       data-clear-btn="true" value=""/>
+                <label for="txtHKComments">Reviewer Comments:</label>
+                <textarea name="txtHKComments" id="txtHKComments"></textarea>
+                <label for="HKRatings">Overall Ratings (1-100):</label>
+                <input type="number" name="txtHKRatings" id="txtHKRatings" value=""/>
+
+                <button id="btnHKSave" name="btnHKSave" class="ui-btn-active"
+                        style="width: 80px">Save</button>
+            </Form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h1>&copy; 2020 Heuijin Ko</h1>
+        </footer>
+    </div>
+
+
+    <!--Task 6: List of Reviews Page-->
+    <div id="HKViewFeedbackPage" data-role="page">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h2>List of Reviews</h2>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#HKHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#HKAddFeedbackPage" data-icon="plus"
+                           data-theme="a">Add</a></li>
+                    <li><a href="#HKViewFeedbackPage" data-icon="grid" data-theme="a"
+                           class="ui-btn-active ui-state-persist">Reviews</a></li>
+                    <li><a href="#HKSettingsPage" data-icon="gear"
+                           data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+           <ul data-role="listview" id="HKFeedbackList" data-inset="true">
+               <li data-icon="false"><a href="#HKEditFeedbackPage">
+                   <h4>Business Name: Tim Hortons</h4>
+                   <p>Reviewer Email:Amy0672@yahoo.com</p>
+                   <p>Comments: Best coffee shop in north america.</p>
+                   <p>Overall Rating: 90%</p></a>
+               </li>
+               <li data-icon="false"><a href="#HKEditFeedbackPage">
+                   <h4>Business Name: Burger King</h4>
+                   <p>Reviewer Email:Allen.Paris@google.ca</p>
+                   <p>Comments: Poor late night service.</p>
+                   <p>Overall Rating: 30%</p></a>
+               </li>
+           </ul>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h1>&copy; 2020 Heuijin Ko</h1>
+        </footer>
+    </div>
+
+    <!--Task 7: Modify Feedback Page-->
+    <div id="HKEditFeedbackPage" data-role="page">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h2>Modify Feedback</h2>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#HKHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#HKAddFeedbackPage" data-icon="plus"
+                           data-theme="a">Add</a></li>
+                    <li><a href="#HKViewFeedbackPage" data-icon="grid" data-theme="a"
+                           class="ui-btn-active ui-state-persist">Reviews</a></li>
+                    <li><a href="#HKSettingsPage" data-icon="gear"
+                           data-theme="a">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <Form id="HKModifyForm" name="HKModifyForm">
+                <label for="HKBizName">Business Name:</label>
+                <input type="text" name="txtHKEditBizName"
+                       id="txtHKEditBizName" value="Tim Hortons"/>
+
+                <label for="HKEmail">Reviewer Email:</label>
+                <input type="text" name="txtHKEditEmail"
+                       id="txtHKEditEmail" value="Amy0672@yahoo.com"/>
+
+                <label for="HKComments">Reviewer Comments:</label>
+                <textarea name="txtHKEditComments" id="txtHKEditComments">
+                    Best coffee shop in north america.</textarea>
+
+                <label for="HKRatings">Overall Ratings (1-100):</label>
+                <input type="number" name="txtHKEditRatings"
+                       id="txtHKEditRatings" value="90"/>
+
+                <!--grout buttons-->
+                <div data-role="controlgroup" data-type="horizontal">
+                    <button id="btnHKCancel" name="btnHKCancel"
+                            style="background: yellow">Cancel</button>
+                    <button id="btnHKDelete" name="btnHKDelete"
+                            style="background: black">Delete</button>
+                    <button id="btnHKUpdate" name="btnHKUpdate"
+                            class="ui-btn-active">Update</button>
+                </div>
+            </Form>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed">
+            <h1>&copy; 2020 Heuijin Ko</h1>
+        </footer>
+    </div>
+
+    <!--Task 8: Settings Page-->
+    <div id="HKSettingsPage" data-role="page">
+        <header data-role="header" data-theme="b" data-position="fixed">
+            <h2>Settings</h2>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#HKHomePage" data-icon="home" data-theme="a">Home</a></li>
+                    <li><a href="#HKAddFeedbackPage" data-icon="plus"
+                           data-theme="a">Add</a></li>
+                    <li><a href="#HKViewFeedbackPage" data-icon="grid"
+                           data-theme="a">Reviews</a></li>
+                    <li><a href="#HKSettingsPage" data-icon="gear" data-theme="a"
+                           class="ui-btn-active ui-state-persist">Settings</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <label for="HKtxtDefaultEmail">Default reviewer Email:</label>
+            <input type="text" name="HKtxtDefaultEmail" id="HKtxtDefaultEmail" value=""/>
+            <button id="btnHKSaveDefault" name="btnHKSaveDefault"
+                    class="ui-btn-active">Save Defaults</button>
+            <button id="btnHKClearDatabase" name="btnHKClearDatabase"
+                    class="ui-btn ui-corner-all ui-btn-b">Clear Database</button>
+        </section>
+        <footer data-role="footer" data-theme="b" data-position="fixed"> <!--color changed a, b-->
+            <h1>&copy; 2020 Heuijin Ko</h1>
+        </footer>
+    </div>
+</body>
+</html>
